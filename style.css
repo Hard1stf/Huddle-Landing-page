@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    color: whitesmoke;
+}
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.header {
+    padding-block: 2rem;
+    margin-bottom: 6rem;
+}
+
+.header-img {
+    float: left;
+}
+
+.mockups {
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+.content-text .title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.content-text .brief {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+    padding-inline: 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.button a {
+    background-color: whitesmoke;
+    color: hsl(257, 40%, 49%);
+    letter-spacing: 0.7px;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding-block: 1em;
+    padding-inline: 7em;
+    margin-block: 1.5rem;
+    border-radius: 60px;
+    text-decoration: none;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, .5);
+}
+
+.footer-logos {
+    margin-block: 3rem;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.border {
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-right: .5em;
+    transition: .2s ease-in;
+    transform: scale(1.2);
+}
+
+.bx {
+    font-weight: 400;
+    font-family: 'boxicons' !important;
+    padding: 10px;
+}
+
+.border:hover {
+    border-color: hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+.logo {
+    height: 40px;
+}
+
+.button a:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: whitesmoke;
+    transform: scale(1.3);
+    transition: 250ms ease-in-out;
+}
+
+/* Tablet screen size */
+
+@media(min-width: 760px) {
+
+    .content-text .title {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .content-text .brief {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        line-height: 1.8rem;
+        margin-bottom: 1rem;
+        padding-inline: 20px;
+    }
+
+    .header-img {
+        height: auto;
+    }
+
+    .border {
+        transform: scale(1.5);
+    }
+
+    .footer-logos {
+        gap: 30px;
+    }
+
+    .button a {
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding-block: 0.7em;
+        padding-inline: 6em;
+    }
+}
+
+/* desktop screen size/ */
+
+@media(min-width: 1024px) {
+    body {
+        background-image: url(./images/bg-desktop.svg);
+    }
+}
+
+
+/* Desktop screen size */
+@media(min-width:1440px) {
+    .main {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .content-text .title {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        padding-inline: 20px;
+    }
+
+    .content-text {
+        width: 50%;
+    }
+
+    .container {
+        text-align: left;
+        width: 90%;
+    }
+
+    .mockups-con {
+        width: 60%;
+    }
+
+    .content-text .brief {
+        font-size: 1.5em;
+        line-height: 1.3em;
+    }
+
+    .mockups {
+        margin-bottom: 6rem;
+        width: 100%;
+    }
+
+    .footer-logos {
+        position: absolute;
+        right: 0px;
+        bottom: 30px;
+        width: 50%;
+    }
+
+    .button {
+        justify-content: start;
+        margin-left: 20px;
+    }
+
+    .button a:hover {
+        background-color: hsl(300, 69%, 71%);
+        color: whitesmoke;
+        transform: scale(1.1);
+        transition: 250ms ease-in-out;
+    }
+
+
+    .button a {
+        font-size: 1rem;
+        font-weight: 500;
+        padding-block: 1.2em;
+        padding-inline: 5em;
+        border-radius: 50px;
+    }
+}
